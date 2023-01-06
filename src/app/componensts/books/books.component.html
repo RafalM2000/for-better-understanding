@@ -2,5 +2,6 @@
     style="width: 800px; height: 350px;"
     class="ag-theme-balham-dark"
     [rowData]="rowData"
-    [columnDefs]="columnDefs">
+    [columnDefs]="columnDefs"
+    (cellClicked)="oncellClicked($event)">
 </ag-grid-angular>
