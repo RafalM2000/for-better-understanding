@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ColDef } from 'ag-grid-community';
+import { ColDef, GetRowIdParams } from 'ag-grid-community';
 
 @Component({
   selector: 'app-books',
@@ -15,12 +15,7 @@ export class BooksComponent implements OnInit {
   columnDefs: ColDef[] = [
     { field: 'title' },
     { field: 'author' },
-    {
-      field: 'year',
-      cellStyle: (param) => param.node. === '****' ?
-        { 'background-color': 'green' } :
-        { 'background-color': 'blue' }
-    },
+    { field: 'year' },
     { field: 'rating' }
   ];
 
