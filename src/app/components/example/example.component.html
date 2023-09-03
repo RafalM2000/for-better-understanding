@@ -1,1 +1,5 @@
 <p>example works!</p>
+
+<input type="text" [value]="name()" (keyup)="changeName($event)" />
+
+<pre>{{ name() }}</pre>
