@@ -6,7 +6,7 @@ import { Component, OnInit, Signal, WritableSignal, signal } from '@angular/core
   styleUrls: ['./example.component.scss']
 })
 export class ExampleComponent implements OnInit {
-  name = signal('Rafał')
+  client = signal({id: 1, name:'Rafał'})
 
   constructor() { }
 
@@ -15,7 +15,9 @@ export class ExampleComponent implements OnInit {
 
   changeName(event: Event): void {
     const inputName = (event.target as HTMLInputElement).value;
-    this.name.set(inputName);
+    this.client.mutate(value => {
+      value.name = inputName;
+    });
   }
 
 }

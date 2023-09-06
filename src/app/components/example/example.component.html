@@ -1,5 +1,5 @@
 <p>example works!</p>
 
-<input type="text" [value]="name()" (keyup)="changeName($event)" />
+<input type="text" (keyup)="changeName($event)" />
 
-<pre>{{ name() }}</pre>
+<pre>{{ client() | json}}</pre>
