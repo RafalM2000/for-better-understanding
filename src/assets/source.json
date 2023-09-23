@@ -1,0 +1,7 @@
+{
+    "imie": "Jan",
+    "nazwisko": "Nowak",
+    "wiek": 30,
+    "miasto": "Konin",
+    "zainteresowania": ["sport", "muzyka", "podróże"]
+  }
