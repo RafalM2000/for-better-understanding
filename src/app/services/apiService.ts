@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable} from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { UserInfo } from '../interfaces/user';
 
@@ -10,8 +10,8 @@ export class UserService {
 
   constructor(private _http: HttpClient) { }
 
-  getUsers(): Observable<UserInfo> {
+  getUsers(): Observable<UserInfo[]> {
     const jsonFileUrl = 'assets/source.json';
-    return this._http.get<UserInfo>(jsonFileUrl);
+    return this._http.get<UserInfo[]>(jsonFileUrl)
   }
 }

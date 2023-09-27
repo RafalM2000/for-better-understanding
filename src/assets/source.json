@@ -1,7 +1,37 @@
-{
-    "imie": "Jan",
-    "nazwisko": "Nowak",
-    "wiek": 30,
-    "miasto": "Konin",
-    "zainteresowania": ["sport", "muzyka", "podróże"]
+[
+  {
+    "firstName": "Jan",
+    "lastName": "Nowak",
+    "age": 30,
+    "city": "Konin",
+    "hobbies": ["sport", "muzyka", "podróże"]
+  },
+  {
+    "firstName": "Magda",
+    "lastName": "Osicka",
+    "age": 25,
+    "city": "Warszawa",
+    "hobbies": ["gry planszowe", "muzyka", "książki"]
+  },
+  {
+    "firstName": "Tomasz",
+    "lastName": "Śpiewak",
+    "age": 30,
+    "city": "Sobieszewo",
+    "hobbies": ["e-sport", "muzyka", "gry"]
+  },
+  {
+    "firstName": "Mikołaj",
+    "nazlastNamewisko": "Radomski",
+    "age": 45,
+    "city": "Chełmno",
+    "hobbies": ["sport", "podróże", "podróże"]
+  },
+  {
+    "firstName": "Jan",
+    "lastName": "Nowak",
+    "age": 30,
+    "city": "Inowrocław",
+    "hobbies": ["sport", "taniec", "podróże"]
   }
+]

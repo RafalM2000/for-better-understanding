@@ -1,7 +1,7 @@
 export interface UserInfo {
-    imie: string;
-    nazwisko: string;
-    wiek: number;
-    miasto: string;
-    zainteresowania: string[];
+    firstName: string;
+    lastName: string;
+    age: number;
+    city: string;
+    hobbies: string[];
   }

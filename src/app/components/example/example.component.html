@@ -1,18 +1,23 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-5 mt-5">
-      <div *ngIf="user$ | async as user" class="card bg-info text-white">
+      <div *ngFor="let user of user$ | async" class="card bg-info text-white mt-2">
         <div class="card-body">
-          <h2 class="card-title">{{ user.imie }} {{ user.nazwisko }}</h2>
-          <p class="card-text">Wiek: {{ user.wiek }}</p>
-          <p class="card-text">Miasto: {{ user.miasto }}</p>
+          <h2 class="card-title">{{ user.firstName }} {{ user.lastName }}</h2>
+          <p class="card-text">Wiek: {{ user.age }}</p>
+          <p class="card-text">Miasto: {{ user.city }}</p>
           <h3 class="card-title">Zainteresowania:</h3>
           <ul class="list-group">
-            <li class="list-group-item" *ngFor="let interest of user.zainteresowania">{{ interest }}</li>
+            <li class="list-group-item" *ngFor="let interest of user.hobbies">{{ interest }}</li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+
+
+
 
