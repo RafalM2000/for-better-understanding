@@ -22,10 +22,10 @@
   },
   {
     "firstName": "Mikołaj",
-    "nazlastNamewisko": "Radomski",
+    "lastName": "Radomski",
     "age": 45,
     "city": "Chełmno",
-    "hobbies": ["sport", "podróże", "podróże"]
+    "hobbies": ["sport", "film", "podróże"]
   },
   {
     "firstName": "Jan",
