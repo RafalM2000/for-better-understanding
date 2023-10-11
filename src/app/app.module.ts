@@ -6,19 +6,24 @@ import { AppComponent } from './app.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { ExampleComponent } from './components/example/example.component'
 import { HttpClientModule } from '@angular/common/http';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { FormBuilder, NgsFormsModule } from '@ng-stack/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ExampleComponent
+    ExampleComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AgGridModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    NgSelectModule
   ],
-  providers: [],
+  providers: [FormBuilder],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
