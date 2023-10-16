@@ -6,7 +6,7 @@
         <label for="hobbySelect">Wybierz hobby:</label>
         <ng-select
           id="hobbySelect"
-          [items]="hobbyDict"
+          [items]="hobbyDict$ | async"
           bindLabel="label"
           bindValue="expectedValue"
           formControlName="hobby"
