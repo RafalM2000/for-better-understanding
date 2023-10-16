@@ -1,9 +1,28 @@
-<h1 class="display-3 text-primary font-weight-bold">Nasza lista użytkowników</h1>
-
-<ag-grid-angular
-  style="height: 200px"
-  class="ag-theme-balham-dark"
-  [columnDefs]="columns"
-  [rowData]="user$ | async"
-  >
-</ag-grid-angular>
+<h5 class="font-weight-bold text-center mb-4">Nasza lista użytkowników</h5>
+<div class="row">
+  <div class="col-md-2">
+    <form [formGroup]="userForm">
+      <div class="ng-select">
+        <label for="hobbySelect">Wybierz hobby:</label>
+        <ng-select
+          id="hobbySelect"
+          [items]="hobbyDict$ | async"
+          bindLabel="label"
+          bindValue="expectedValue"
+          formControlName="hobby"
+        >
+        </ng-select>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-9">
+    <ag-grid-angular
+      id="usersTabele"
+      style="height: 200px"
+      class="ag-theme-balham-dark"
+      [columnDefs]="columns"
+      [rowData]="user$ | async"
+    ></ag-grid-angular>
+  </div>
+  
+</div>
